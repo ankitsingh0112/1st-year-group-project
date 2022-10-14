@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semi-Colon</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Stalinist+One&display=swap');
+
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #2196f3;
+        }
+
+        .header {
+            position: absolute;
+            z-index: 1;
+            left: 25px;
+            font-size: 2rem;
+            color: whitesmoke;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-transform: uppercase;
+
+        }
+
+        .header span {
+            color: #2196f3;
+            font-size: 5rem;
+            font-family: 'Righteous', cursive;
+            padding: 0 6px 0 6px;
+            position: relative;
+            bottom: 8px;
+            text-shadow:
+                0 0 10px rgb(69, 131, 231),
+                0 0 55px #2196f3;
+        }
+
+        .section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 3fr 2fr 1fr;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+        }
+
+        .section h1 {
+            text-align: center;
+            font-size: 3rem;
+            font-family: 'Stalinist One', cursive;
+            z-index: 1;
+            color: rgb(184, 230, 230);
+            align-self: flex-end;
+        }
+
+        .neonText {
+            color: #fff;
+            text-shadow:
+                0 0 10px rgb(69, 131, 231),
+                0 0 55px #2196f3;
+            /* text-shadow: [x-offset] [y-offset] [blur-radius] [color]; */
+        }
+
+        .video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+        }
+
+        video {
+            height: 100%;
+            width: 100vw;
+        }
+
+        @media screen and (max-width: 1260px) {
+            video {
+                width: auto;
+                height: auto;
+            }
+
+            .header {
+                margin: auto;
+            }
+
+            .section h1 {
+                left: 0;
+                font-size: 1.5rem;
+                align-self: center;
+                overflow: hidden;
+            }
+
+            .home-btn a {
+                position: relative;
+                bottom: 8rem;
+                color: #fdfdfd;
+            }
+        }
+
+        .color-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: lightblue;
+            width: 100%;
+            height: 100vh;
+            opacity: 0.1;
+        }
+
+        .home-btn {
+            position: relative;
+            justify-self: center;
+            top: 15px;
+            align-self: flex-start;
+        }
+
+        a {
+            position: relative;
+            display: inline-block;
+            padding: 15px 30px;
+            color: #2196f3;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-decoration: none;
+            font-size: 24px;
+            overflow: hidden;
+            transition: 0.2s;
+        }
+
+        a:hover {
+            color: #06121d;
+            background: #2196f3;
+            box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+            transition-delay: 1s;
+        }
+
+        a span {
+            position: absolute;
+            display: block;
+        }
+
+        a span:nth-child(1) {
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #2196f3);
+        }
+
+        a:hover span:nth-child(1) {
+            left: 100%;
+            transition: 1s;
+        }
+
+        a span:nth-child(3) {
+            bottom: 0;
+            right: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(270deg, transparent, #2196f3);
+        }
+
+        a:hover span:nth-child(3) {
+            right: 100%;
+            transition: 1s;
+            transition-delay: 0.5s;
+        }
+
+        a span:nth-child(2) {
+            top: -100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, #2196f3);
+        }
+
+        a:hover span:nth-child(2) {
+            top: 100%;
+            transition: 1s;
+            transition-delay: 0.25s;
+        }
+
+        a span:nth-child(4) {
+            bottom: -100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg, transparent, #2196f3);
+        }
+
+        a:hover span:nth-child(4) {
+            bottom: 100%;
+            transition: 1s;
+            transition-delay: 0.75s;
+        }
+
+        .footer {
+            background-color: #06121d;
+            position: relative;
+            color: #fdfdfd;
+            display: flex;
+            justify-content: center;
+            align-self: flex-end;
+            font-size: 1rem;
+            opacity: 0.3;
+        }
+
+        .footer a {
+            all: unset;
+        }
+
+        .footer a:hover {
+            cursor: pointer;
+        }
+
+
+        /* Animation added later in section h1 */
+
+        .section h1 {
+            transform: scale(0.94);
+            animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+        }
+
+        @keyframes scale {
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .section h1>span {
+            display: inline-block;
+            opacity: 0;
+            filter: blur(4px);
+        }
+
+        .section h1>span:nth-child(1) {
+            animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        .section h1>span:nth-child(2) {
+            animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        .section h1>span:nth-child(3) {
+            animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        .section h1>span:nth-child(4) {
+            animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        .section h1>span:nth-child(5) {
+            animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        .section h1>span:nth-child(6) {
+            animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        @keyframes fade-in {
+            100% {
+                opacity: 1;
+                filter: blur(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        Sem<span>;</span>colon
+    </div>
+    <div class="section">
+
+        <h1 class="neonText"><span>Welcome</span> <span>to</span> <span>the</span> <span>World</span> <span>of</span>
+            <span>Sports</span>
+        </h1>
+
+        <div class="video-container">
+            <div class="color-overlay"></div>
+            <video autoplay loop muted>
+                <source src="Pre-HomePage/BG.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="home-btn">
+            <a href="Homepage/homepage.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Let's Dive In
+            </a>
+        </div>
+        <div class="footer">
+            <p>&copy; | <a href="#">team-semicolon.netlify.app</a> | All rights reserved</p>
+        </div>
+    </div>
+</body>
+
+</html>

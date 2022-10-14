@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+
+  <!-- Header Design -->
+
+  <header>
+    <nav class="navbar navbar-expand-lg navigation-wrap navbar-default navbar-fixed">
+      <div class="container">
+        <a class="navbar-brand semicolon" href="../index.html">Sem<span>;</span>colon</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <i class="fas fa-stream navbar-toggler-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#games">Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#developers">Developers</a>
+            </li>
+          </ul>
+          <!-- <form class="d-flex search-box">
+            <a href="#"><button class="btn btn-outline-success" type="submit">Register</button></a>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="image/football.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-md-block car-cap">
+            <h5>FOOTBALL</h5>
+            <p>Football makes people happy.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="image/cricket.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-md-block car-cap">
+            <h5>CRICKET</h5>
+            <p>Cricket is never simply a game; it is an array of emotions; it
+              is a basket of love. The passion for it is very much contagious.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="image/badminton.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-md-block car-cap">
+            <h5>BADMINTON</h5>
+            <p>The joy of hitting that shuttlecock high and long with friends.
+              Play again.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Games Section -->
+
+  <section id="games">
+    <div class="container text-center">
+      <h2 class="p-4">Outdoor Games</h2>
+      <div class="row">
+        <div class="col-5 col-md-3 mb-4 mb-lg-0">
+          <div class="card sports">
+            <div class="cat-image">
+              <a class="link-football" href="Games/football/football.html">
+                <div class="video-card-container">
+                  <div class="video-card">
+                    <img src="image/football.jpg" class="img-fluid video-card-image">
+                    <video autoplay loop muted class="card-video">
+                      <source src="../Homepage/video/football.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="cat-title">
+              <a href="Games/football/football.html">Football</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-5 col-md-3 mb-4 mb-lg-0">
+          <div class="card sports">
+            <div class="cat-image">
+              <a class="link-football" href="Games/badminton/abd.html">
+                <div class="video-card-container">
+                  <div class="video-card">
+                    <img src="image/badminton.jpeg" class="img-fluid video-card-image">
+                    <video autoplay loop muted class="card-video">
+                      <source src="video/badminton.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="cat-title">
+              <a href="Games/badminton/abd.html">Badminton</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-5 col-md-3 mb-4 mb-lg-0">
+          <div class="card sports">
+            <div class="cat-image">
+              <a class="link-football" href="Games/CRICKET/Cricket.html">
+                <div class="video-card-container">
+                  <div class="video-card">
+                    <img src="image/cricket.jpg" class="img-fluid video-card-image">
+                    <video autoplay loop muted class="card-video">
+                      <source src="video/cricket.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="cat-title">
+              <a href="Games/CRICKET/Cricket.html">Cricket</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-5 col-md-3 mb-4 mb-lg-0">
+          <div class="card sports">
+            <div class="cat-image">
+              <a class="link-football" href="Games/volleyball/volly.html">
+                <div class="video-card-container">
+                  <div class="video-card">
+                    <img src="image/vollyball.jpg" class="img-fluid video-card-image">
+                    <video autoplay loop muted class="card-video">
+                      <source src="video/volleyball.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="cat-title">
+              <a href="Games/volleyball/volly.html">Volleyball</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-5 col-md-3 mb-4 mb-lg-0 mt-4">
+          <div class="card sports">
+            <div class="cat-image">
+              <a class="link-football" href="Games/KABADDI/Kabaddi.html">
+                <div class="video-card-container">
+                  <div class="video-card">
+                    <img src="image/kabaddi.jpg" class="img-fluid video-card-image">
+                    <video autoplay loop muted class="card-video">
+                      <source src="video/kabaddi.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="cat-title">
+              <a href="Games/KABADDI/Kabaddi.html">Kabaddi</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container text-center">
+      <h2 class="p-4">Indoor Games</h2>
+      <div class="row">
+        <div class="col-5 col-md-3 mb-4 mb-lg-0">
+          <div class="card sports">
+            <div class="cat-image">
+              <a class="link-football" href="Games/chess/chess.html">
+                <div class="video-card-container">
+                  <div class="video-card">
+                    <img src="image/chess.jpg" class="img-fluid video-card-image">
+                    <video autoplay loop muted class="card-video">
+                      <source src="video/chess.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="cat-title">
+              <a href="Games/chess/chess.html">Chess</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-5 col-md-3 mb-4 mb-lg-0">
+          <div class="card sports">
+            <div class="cat-image">
+              <a class="link-football" href="Games/uno/uno.html">
+                <div class="video-card-container">
+                  <div class="video-card">
+                    <img src="image/Uno_cards.jpg" class="img-fluid video-card-image">
+                    <video autoplay loop muted class="card-video">
+                      <source src="video/uno.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="cat-title">
+              <a href="Games/uno/uno.html">Uno</a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- <div class="col-5 col-md-3 mb-4 mb-lg-0">
+          <div class="card sports">
+            <div class="cat-image">
+              <a class="link-football" href="#">
+                <div class="video-card-container">
+                  <div class="video-card">
+                    <img src="image/chess.jpg" class="img-fluid video-card-image">
+                    <video autoplay loop muted class="card-video">
+                      <source src="../Pre-HomePage/BG.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="cat-title">
+              <a href="#">Ludo</a>
+            </div>
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- About Section -->
+
+  <section id="about">
+    <div class="container text-center">
+      <h2 class="p-4">About Us</h2>
+      <div class="row row-cols-sm-1 row-cols-md-2 g-4">
+        <div class="cols-1 cols-sm-1">
+          <div class="semicolon about-semi">
+            Sem<span>;</span>colon
+          </div>
+        </div>
+        <div class="col">
+          <div>
+            <p>Hey there, hope you like our website.
+              We have created this website as our 1<sup>st</sup> gear-up project in the world of learning full stack development. 
+             Our website is based on information about sports. You will get here information about all the indoor and outdoor games and their rules and regulations briefly.
+            <a href="/AboutUs/about.html">Know More</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+  <!-- Developers Section -->
+
+  <section id="developers">
+    <div class="container text-center">
+      <h2 class="p-4">Developers</h2>
+      <div class="row row-cols-2 row-cols-md-5 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="Developers/Manisha.jpg" class="card-img-top p-2" style="border-radius: 50%;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title name">Manisha Jaishwal</h5>
+              <p class="card-text">1st year B.tech(CSE) student of LNJPIT, Chapra</p>
+              <!-- <ul>Contribution in this project :
+                <li>Chess Page</li>
+                <li>Photos & Videos</li>
+              </ul> -->
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="Developers/ankit.jpg" class="card-img-top p-2" style="border-radius: 50%;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title name">Ankit Raj Sinha</h5>
+              <p class="card-text">1st year B.tech(CSE) student of LNJPIT, Chapra</p>
+              <!-- <ul>Contribution in this project :
+                <li>Volleyball Page</li>
+                <li>Badminton Page</li>
+                <li>UNO Page</li>
+                <li>Photo & Videos</li>
+              </ul> -->
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="Developers/AnkitSingh.jpg" class="card-img-top p-2" style="border-radius: 50%;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title name">Ankit Kumar Singh</h5>
+              <p class="card-text">1st year B.tech(CSE) student of LNJPIT, Chapra</p>
+              <!-- <ul>Contribution in this project :
+                <li>Pre-homepage (Starting Page)</li>
+                <li>Homepage</li>
+                <li>About Us Page</li>
+              </ul> -->
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="Developers/Mayank.jpg" class="card-img-top p-2" style="border-radius: 50%;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title name">Mayank</h5>
+              <p class="card-text">1st year B.tech(CSE) student of LNJPIT, Chapra</p>
+              <!-- <ul>Contribution in this project :
+                <li>Football Page</li>
+                <li>All the Information collected</li>
+                <li>Photos & Videos</li>
+              </ul> -->
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="Developers/aman.jpg" class="card-img-top p-2" style="border-radius: 50%;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title name">Aman Kumar Singh</h5>
+              <p class="card-text">1st year B.tech(CSE) student of LNJPIT, Chapra</p>
+              <!-- <ul>Contribution in this project :
+                <li>Cricket Page</li>
+                <li>Kabaddi Page</li>
+                <li>Photos & Videos</li>
+              </ul> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="foot text-center" style="padding: 2em 0 0 0;">
+      <p style="background-color: white;">&copy; | <a style="text-decoration: none; color: black; cursor: pointer;"
+          href="../index.html">team-semicolon.netlify.app</a> | All rights reserved</p>
+    </div>
+  </footer>
+
+
+  <!-- JS links -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

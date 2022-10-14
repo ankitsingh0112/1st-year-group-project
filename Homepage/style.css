@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Stalinist+One&display=swap');
+
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color) !important;
+}
+
+/*===== Variable Define =====*/
+:root {
+    --primary-color: #2196f3;
+    --secondry-color: rgb(69, 131, 231);
+    --white-color: #fff;
+    --text-color: #b0b0b0;
+    --black-color: #0e0e0e;
+    --primary-font: 'Roboto', sans-serif;
+    --secondry-font: 'Quicksand', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #040f20;
+    /* background-image: linear-gradient(#fff, #232324); */
+    background-repeat: repeat;
+}
+
+/*
+=========================================
+    Custom Scrollbar
+=========================================
+*/
+
+::-webkit-scrollbar {
+    width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--black-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondry-color);
+}
+
+/* 
+=========================================
+    Navigation Bar/Header Design
+=========================================
+*/
+.navigation-wrap {
+    /* background-image: linear-gradient(to bottom right, #fff,red); */
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navigation-wrap .nav-item {
+    padding: 0 0.625rem;
+    transition: all 0.3s linear;
+}
+
+.navbar-toggler:focus {
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+
+.nav-link {
+    /* margin-top: 1.2rem; */
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--black-color);
+    letter-spacing: 2px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--secondry-color) !important;
+}
+
+/* Change navbar styling on scroll */
+.navigation-wrap.scroll-on {
+    position: fixed;
+    background-color: var(--black-color);
+    top: 0;
+    left: 0;
+    /* height: 4rem; */
+    width: 100%;
+    box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.09);
+    transition: all 0.15s ease-in-out 0s;
+}
+
+.navigation-wrap.scroll-on .nav-link {
+    color: var(--white-color);
+}
+
+.navigation-wrap.scroll-on .nav-link:hover,
+.navigation-wrap.scroll-on .nav-link.active {
+    color: var(--primary-color);
+}
+
+
+/* 
+======================================
+        Custom CSS
+====================================== 
+*/
+.navbar {
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.semicolon {
+    top: 0;
+    overflow: hidden;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+
+.semicolon span {
+    color: #2196f3;
+    font-size: 5rem;
+    font-family: 'Righteous', cursive;
+    padding: 0 6px 0 6px;
+    position: relative;
+    bottom: 8px;
+    text-shadow:
+        0 0 10px rgb(69, 131, 231),
+        0 0 55px #2196f3;
+}
+
+.nav-item {
+    margin: 0 0.8rem;
+}
+
+.nav-item a {
+    font-size: 1.1rem;
+}
+
+
+/* search form */
+
+
+.search-box input {
+    padding: 6px;
+    /* margin-top: 1.2rem; */
+    font-size: 15px;
+    border: 1px solid grey;
+    /* float: left; */
+    width: 75%;
+    background: #f1f1f1;
+    border-radius: 33px;
+}
+
+.search-box button {
+    /* margin-top: 1.2rem; */
+    /* border-radius: 33px; */
+    /* float: left; */
+    /* width: 25%; */
+    padding: 8px;
+    background: #0c273e;
+    color: white;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-box .btn:hover {
+    background-color: #ffffff;
+    border: none;
+    color: #0e0e0e;
+}
+
+
+
+/* section */
+
+.carousel {
+    height: 100vh;
+}
+
+.carousel .carousel-item {
+    height: 100vh;
+}
+
+.carousel .carousel-item .car-cap h5 {
+    color: var(--white-color);
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: 0 0 10px var(--black-color),
+        0 0 15px #0e0e0e;
+}
+
+.carousel .carousel-item .car-cap p {
+    color: var(--white-color);
+    font-size: 1.3rem;
+    text-shadow: 0 0 10px var(--black-color),
+        0 0 15px #0e0e0e;
+}
+
+/* 
+=============================
+Responsive part
+=============================
+*/
+@media (max-width: 991px) {
+    body {
+        object-fit: cover;
+    }
+
+    .navigation-wrap .semicolon {
+        font-size: 1.3rem;
+        color: white;
+    }
+
+    .navigation-wrap .semicolon span {
+        font-size: 3rem;
+        bottom: 5px;
+    }
+
+    .navigation-wrap button {
+        position: absolute;
+        right: 20px;
+        background-color: #f1f1f1;
+        border-radius: 8px;
+        height: auto;
+    }
+
+    .navigation-wrap {
+        height: auto;
+        text-align: center;
+        background-image: linear-gradient(to right, rgb(50, 52, 54), rgb(14, 14, 14));
+    }
+
+    .navigation-wrap .nav-link {
+        line-height: 1.875rem;
+        color: var(--white-color);
+    }
+
+    .search-box input {
+        width: 75%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search-box button {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #2196F3;
+    }
+
+    .carousel {
+        position: relative;
+        top: 98px;
+        height: auto;
+    }
+
+    .carousel .carousel-item {
+        height: auto;
+    }
+
+    .carousel .carousel-item .car-cap h5 {
+        font-size: 1.2rem;
+        color: var(--white-color);
+    }
+
+    .carousel .carousel-item .car-cap p {
+        font-size: 0.7rem;
+    }
+
+    #about,
+    #developers h2,
+    #games h2 {
+        position: relative;
+        z-index: 10;
+        top: 98px;
+    }
+
+    .sports {
+        position: relative;
+        top: 98px;
+        height: auto;
+        left: 25%;
+    }
+
+    .card {
+        position: relative;
+        top: 98px;
+        height: auto;
+        /* transform: scale(.8); */
+    }
+
+    footer {
+        position: relative;
+        top: 98px;
+        height: auto;
+
+    }
+}
+
+/* 
+======================
+    Games Section
+======================
+*/
+
+#about h2,
+#developers h2,
+#games h2 {
+    color: var(--white-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow:
+        0 0 10px rgb(72, 72, 72),
+        0 0 20px rgb(255, 255, 255);
+    text-decoration: line-through;
+}
+
+
+#developers .card,
+#games .card {
+    border: none;
+    padding: 8px 0;
+    background: transparent;
+    /* border: 1px solid white; */
+    box-shadow: 0 0 10px var(--black-color), 0 0 12px var(--white-color);
+}
+
+
+#developers .card:hover,
+#games .card:hover {
+    transform: scale(1.05);
+    overflow: hidden;
+    box-shadow: 0 0 10px var(--black-color), 0 0 15px var(--white-color);
+}
+
+#games .link-football {
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+
+#games .cat-title a {
+    text-align: center;
+    font-size: 0.8125rem;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.card:hover .cat-title a {
+    color: var(--primary-color);
+}
+
+
+.video-card-container {
+    position: relative;
+    width: 92%;
+    margin: auto;
+    height: 10vw;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.video-card {
+    position: relative;
+    min-width: calc(100% / 1 - 0px);
+    width: calc(100% / 2 - 10px);
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #030b17;
+}
+
+
+.video-card-image,
+.card-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-video {
+    position: relative;
+    left: 0;
+}
+
+.video-card:hover .video-card-image {
+    display: none;
+}
+
+#about p{
+    color: var(--white-color);
+    font-family:monospace;
+}
+
+#developers img {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.name {
+    font-family: var(--secondry-font);
+    font-weight: 600;
+    color: var(--white-color);
+}
+
+#developers .card-text {
+    color: var(--white-color);
+}
+
+#developers ul{
+    color: #b0b0b0;
+}
+
+#developers ul li{
+    list-style:square;
+    list-style-position:inside;
+}
+
+footer {
+    opacity: 0.5;
+}
